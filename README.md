@@ -17,7 +17,8 @@
 
 There is open source custom  and animated textfields. You can use 4 animation style and 7 combination. So you can choose your animation style and when you want to start the animation. 
 
-![Screen Recording 2024-05-09 at 20 42 51](https://github.com/amirovaleh/UITextFieldAnimatedPack/assets/97683310/de059bc7-bcb8-4f1c-a2b5-67ce9522a6a5)
+
+![Screen Recording 2024-05-09 at 20 42 51](https://github.com/amirovaleh/UITextFieldAnimatedPack/assets/97683310/d4c53c54-89d1-4023-b715-c4dc0db5d5df)
 
 
 ```
