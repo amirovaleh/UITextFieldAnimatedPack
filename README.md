@@ -2,13 +2,13 @@
 
 
 ## Contents
-1) [Introduction](#introduction)
-2) [How To Use](#how-to-use)
-3) [Properties](#properties)
-4) [All properties](#all-properties)
-5) [ATTENTION !!!](#attention-)
-+ [`textField.becomeFirstResponder()` and `textField.resignFirstResponder()`](#textfieldbecomefirstresponder-and-textfieldresignfirstresponder)
-+ [`textField.widthAnchor` and `textField.heightAnchor`](#textfieldwidthanchor-and-textfieldheightanchor)
+1. [Introduction](#introduction)
+2. [How To Use](#how-to-use)
+3. [Properties](#properties)
+4. [All properties](#all-properties)
+5. [ATTENTION !!!](#attention-)
+   - [`textField.becomeFirstResponder()` and `textField.resignFirstResponder()`](#textfieldbecomefirstresponder-and-textfieldresignfirstresponder)
+   - [`textField.widthAnchor` and `textField.heightAnchor`](#textfieldwidthanchor-and-textfieldheightanchor)
 
 
 ## Introduction
@@ -21,19 +21,19 @@ There is open source custom  and animated textfields. You can use 4 animation st
 ![Screen Recording 2024-05-09 at 20 42 51](https://github.com/amirovaleh/UITextFieldAnimatedPack/assets/97683310/d4c53c54-89d1-4023-b715-c4dc0db5d5df)
 
 
-```
+```swift
 private let textField1 = UITextFieldAnimated(animation: .betweenBorderAndTextFieldStyle)
 ```
 
-```
+```swift
 private let textField2 = UITextFieldAnimated(animation: .onBorderLineStyle)
 ```
 
-```
+```swift
 private let textField3 = UITextFieldAnimated(animation: .overBorderLineStyle)
 ```
 
-```
+```swift
 private let textField4 = UITextFieldAnimated(animation: .hiddenPlaceholderStyle)
 ```
 
@@ -44,7 +44,7 @@ You can use the `textField.whenToStart` property to specify when the animation s
 
 
 
-```   
+```swift 
 
 import UIKit
 import UITextFieldAnimatedPack
@@ -91,7 +91,7 @@ I've made the textField in the UITextFieldAnimated class private and prepared th
 ### All properties
 
 
-```
+```swift
         // When you want to start
         textField.whenToStart = .beginEditing
         
@@ -140,7 +140,7 @@ I've made the textField in the UITextFieldAnimated class private and prepared th
 
 These two methods, `textField.customBecomeFirstResponder()` and `textField.customResignFirstResponder()`, perform the same function as the standard `textField.becomeFirstResponder()` and `textField.resignFirstResponder()` methods. However, their usage needs to be handled differently. Calling these methods during the assignment of values to the UITextFieldAnimated object or within methods like `override func viewDidLoad()` can cause issues for the proper functioning of the animations associated with the object. It's recommended to use these methods within the `override func viewDidAppear(_ animated: Bool)` method or other methods called after the view has been created for proper functionality.
 
-```
+```swift
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -164,7 +164,7 @@ These two methods, `textField.customBecomeFirstResponder()` and `textField.custo
  Feel free to adjust width settings as needed when defining constraints or frames. However, please refrain from modifying height settings, as they are set to a standard value of 50 by default.
 
 
-```
+```swift
 //            MARK: --- DONT DO THIS
             textField.heightAnchor.constraint(equalToConstant: 70)
 
