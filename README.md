@@ -3,7 +3,7 @@
 
 ## Contents
 1. [Introduction](#introduction)
-
+2. [Installation](#installation)
 3. [How To Use](#how-to-use)
 4. [Properties](#properties)
 5. [All properties](#all-properties)
