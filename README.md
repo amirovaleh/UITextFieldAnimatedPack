@@ -3,10 +3,11 @@
 
 ## Contents
 1. [Introduction](#introduction)
-2. [How To Use](#how-to-use)
-3. [Properties](#properties)
-4. [All properties](#all-properties)
-5. [ATTENTION !!!](#attention-)
+
+3. [How To Use](#how-to-use)
+4. [Properties](#properties)
+5. [All properties](#all-properties)
+6. [ATTENTION !!!](#attention-)
    - [`textField.becomeFirstResponder()` and `textField.resignFirstResponder()`](#textfieldbecomefirstresponder-and-textfieldresignfirstresponder)
    - [`textField.widthAnchor` and `textField.heightAnchor`](#textfieldwidthanchor-and-textfieldheightanchor)
 
@@ -37,12 +38,21 @@ private let textField3 = UITextFieldAnimated(animation: .overBorderLineStyle)
 private let textField4 = UITextFieldAnimated(animation: .hiddenPlaceholderStyle)
 ```
 
+## Installation
+
+Open Your Project in Xcode
+Go to File > Swift Packages > Add Package Dependencies..>
+Enter the URL of the UITextFieldAnimatedPack repository. It will typically look like this:
+
+```
+https://github.com/amirovaleh/UITextFieldAnimatedPack
+```
+Then choose `Add Package`
+
 ## How To Use
 
 It's very easy to use. For example, you assign a text field to a variable. While assigning, you specify which animation style you'll use here.
 You can use the `textField.whenToStart` property to specify when the animation starts. If you don't set this, it will default to `textField.whenToStart = .beginEditing` .
-
-
 
 ```swift 
 
